@@ -1,27 +1,23 @@
-# AngularEslint
+# Angular ESLint
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
+Source code used in the article [Configure ESLint with Angular](https://www.blouppy.com/blog/2023-04-03-configure-eslint-with-angular/) on the [Blouppy](https://www.blouppy.com) website.
 
-## Development server
+## Project type
+- Angular project.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Project version
+- Angular 15. This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
 
-## Code scaffolding
+## NPM packages includes
+- **@angular-eslint/builder**: 15.2.1 (An Angular CLI Builder which is used to execute ESLint on the Angular project using standard commands such as `ng lint`.)
+- **@angular-eslint/eslint-plugin**: 15.2.1 (An ESLint-specific plugin that contains rules which are specific to Angular projects. It can be combined with any other ESLint plugins in the normal way.)
+- **@angular-eslint/eslint-plugin-template**: 15.2.1 (An ESLint-specific plugin which, when used in conjunction with @angular-eslint/template-parser, allows for Angular template-specific linting rules to run.)
+- **@angular-eslint/schematics**: 15.2.1 (Schematics which are used to add and update configuration files which are relevant for running ESLint on an Angular workspace.)
+- **@angular-eslint/template-parser**: 15.2.1 (An ESLint-specific parser which leverages the @angular/compiler to allow for custom ESLint rules to be written which assert things about your Angular templates.)
+- **eslint**: 8.33.0
+  
+## Give a Star! :star:
+If you like or are using this project please give it a star. Thanks!
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Support this project! :pray:
+If you want to help me to maintain this project or add improvements, it would be a pleasure!
