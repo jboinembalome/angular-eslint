@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
   }
 
   private getHelloWorld(): string {
-    let hello = 'Hello';
+    const hello = 'Hello';
     const world = 'World';
 
     return `${hello} ${world}!`;
