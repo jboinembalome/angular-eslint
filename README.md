@@ -1,23 +1,39 @@
 # Angular ESLint
 
-Source code used in the article [Configure ESLint with Angular](https://www.blouppy.com/blog/2023-04-03-configure-eslint-with-angular/) on the [Blouppy](https://www.blouppy.com) website.
+Source code used in the article [Configure ESLint with Angular](https://blouppy.com/blog/2023-04-03-configure-eslint-with-angular/) on the [Blouppy](https://blouppy.com) website.
 
-## Project type
-- Angular project.
+It is a new Angular 22 application (`ng new`) with [ESLint](https://eslint.org/) added by `ng add angular-eslint`:
+
+- `eslint.config.js`: the ESLint flat config (ESLint and typescript-eslint recommended rules, Angular's rules for TypeScript files and for templates, accessibility included).
+- `angular.json`: a `lint` target, so `ng lint` runs ESLint on `src/**/*.ts` and `src/**/*.html`.
+- `.vscode/extensions.json`: recommends the ESLint extension for VS Code.
 
 ## Project version
-- Angular 15. This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
 
-## NPM packages includes
-- **@angular-eslint/builder**: 15.2.1 (An Angular CLI Builder which is used to execute ESLint on the Angular project using standard commands such as `ng lint`.)
-- **@angular-eslint/eslint-plugin**: 15.2.1 (An ESLint-specific plugin that contains rules which are specific to Angular projects. It can be combined with any other ESLint plugins in the normal way.)
-- **@angular-eslint/eslint-plugin-template**: 15.2.1 (An ESLint-specific plugin which, when used in conjunction with @angular-eslint/template-parser, allows for Angular template-specific linting rules to run.)
-- **@angular-eslint/schematics**: 15.2.1 (Schematics which are used to add and update configuration files which are relevant for running ESLint on an Angular workspace.)
-- **@angular-eslint/template-parser**: 15.2.1 (An ESLint-specific parser which leverages the @angular/compiler to allow for custom ESLint rules to be written which assert things about your Angular templates.)
-- **eslint**: 8.33.0
-  
+- Angular 22. This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 22.2.6.
+- Node.js 22 (an active or maintenance LTS version supported by Angular 22).
+
+## NPM packages included
+
+- **angular-eslint**: 22.6.0 (the Angular CLI builder, schematics, ESLint plugins and template parser in one package)
+- **eslint**: 10.14.0
+- **@eslint/js**: 10.0.1 (ESLint's recommended rules)
+- **typescript-eslint**: 8.71.0 (the TypeScript parser and rules)
+
+## Run it
+
+```bash
+npm ci
+npm run lint           # ng lint
+npx ng lint --fix      # fix what can be fixed automatically
+npm start              # ng serve on http://localhost:4200
+npm run build          # production build in dist/
+```
+
 ## Give a Star! :star:
+
 If you like or are using this project please give it a star. Thanks!
 
 ## Support this project! :pray:
+
 If you want to help me to maintain this project or add improvements, it would be a pleasure!
